@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
 })
 export class MyProfilePage {
   constructor() {
-
+  }
+  openWebSite(url) {
+    window.open(url, '_system', 'location=yes');
+    return false;
   }
 }
