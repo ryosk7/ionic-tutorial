@@ -9,11 +9,13 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { MyProfilePage } from '../pages/my-profile/my-profile';
 
 @NgModule({
   declarations: [
     MyApp,
     HelloIonicPage,
+    MyProfilePage,
     ItemDetailsPage,
     ListPage
   ],
@@ -25,6 +27,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HelloIonicPage,
+    MyProfilePage,
     ItemDetailsPage,
     ListPage
   ],
