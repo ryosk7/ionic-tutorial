@@ -10,6 +10,7 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MyProfilePage } from '../pages/my-profile/my-profile';
+import { EmojiPickerModule } from 'ionic-emoji-picker';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MyProfilePage } from '../pages/my-profile/my-profile';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    EmojiPickerModule.forRoot(),
   ],
   bootstrap: [IonicApp],
   entryComponents: [

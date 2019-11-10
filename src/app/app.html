@@ -16,4 +16,11 @@
 
 </ion-menu>
 
+<ion-textarea [(ngModel)]="message"></ion-textarea>
+
+<button ion-button clear icon-only (click)="toggled = !toggled" [(emojiPickerIf)]="toggled"
+  [emojiPickerDirection]="'top'" (emojiPickerSelect)="handleSelection($event)">
+  <ion-icon name="md-happy"></ion-icon>
+</button>
+
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

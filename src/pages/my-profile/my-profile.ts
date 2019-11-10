@@ -11,4 +11,11 @@ export class MyProfilePage {
     window.open(url, '_system', 'location=yes');
     return false;
   }
+
+  toggled: boolean = false;
+  message: string;
+
+  handleSelection(event) {
+    this.message += event.char;
+  }
 }
