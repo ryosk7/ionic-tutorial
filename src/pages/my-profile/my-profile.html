@@ -44,4 +44,10 @@
     <button ion-button color="primary" menuToggle>Toggle Menu</button>
   </p>
 
+  <ion-textarea [(ngModel)]="message"></ion-textarea>
+  <button ion-button clear icon-only (click)="toggled = !toggled" [(emojiPickerIf)]="toggled"
+    [emojiPickerDirection]="'top'" (emojiPickerSelect)="handleSelection($event)">
+    <ion-icon name="md-happy"></ion-icon>
+  </button>
+
 </ion-content>
